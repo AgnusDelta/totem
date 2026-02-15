@@ -1,9 +1,9 @@
 {
   "categories": ["Hamburguesas", "Papas", "Bebidas", "Postres"],
   "products": [
-    { "id": 1, "name": "Mega Burger", "price": 8500, "category": "Hamburguesas" },
-    { "id": 2, "name": "Cyber Fries", "price": 2500, "category": "Papas" },
-    { "id": 3, "name": "Neon Soda", "price": 1500, "category": "Bebidas" },
-    { "id": 4, "name": "Ice Quantum", "price": 3000, "category": "Postres" }
+    { "id": 1, "name": "Mega Burger", "price": 8500, "category": "Hamburguesas", "image": "assets/img/burger.webp" },
+    { "id": 2, "name": "Cyber Fries", "price": 2500, "category": "Papas", "image": "assets/img/papasfritas.webp" },
+    { "id": 3, "name": "Neon Soda", "price": 1500, "category": "Bebidas", "image": "assets/img/soda.jpeg" },
+    { "id": 4, "name": "Ice Quantum", "price": 3000, "category": "Postres", "image": "assets/img/icecream.jpeg" }
   ]
 }
