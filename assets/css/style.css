@@ -1,0 +1,77 @@
+:root {
+    --primary: #e61e2a; /* Rojo apetitoso */
+    --bg: #f4f4f4;
+    --dark: #222;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+
+.kiosk-wrapper {
+    display: grid;
+    grid-template-columns: 120px 1fr 300px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Sidebar de categorías */
+.sidebar {
+    background: var(--dark);
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.category-btn {
+    color: white;
+    padding: 20px 10px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.category-btn.active { background: var(--primary); font-weight: bold; }
+
+/* Grilla de productos */
+.menu-content { padding: 20px; overflow-y: auto; background: var(--bg); }
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.product-card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.product-card:active { transform: scale(0.95); }
+
+/* Carrito */
+.order-summary {
+    background: white;
+    border-left: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#cart-items { flex-grow: 1; overflow-y: auto; }
+
+.btn-pay {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiosk Pro | Touch to Order</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="kiosk-wrapper">
+        <aside class="sidebar" id="categories-nav"></aside>
+
+        <main class="menu-content">
+            <header>
+                <h1>Elige tu Menú</h1>
+            </header>
+            <div class="products-grid" id="products-container"></div>
+        </main>
+
+        <section class="order-summary">
+            <h2>Tu Pedido</h2>
+            <div id="cart-items"></div>
+            <div class="order-footer">
+                <div class="total">Total: <span id="total-amount">$0</span></div>
+                <button id="pay-btn" class="btn-pay">FINALIZAR PEDIDO</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
