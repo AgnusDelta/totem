@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KioskJS | McDonald's Style</title>
+    <title>KioskJS | Pro</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div id="toast-container"></div>
-
     <div class="kiosk-wrapper">
         <aside class="sidebar">
-            <div class="logo-box">🍟 KioskJS</div>
+            <div class="logo-box">🍟 KIOSK JS</div>
             <nav id="categories-nav"></nav>
         </aside>
 
         <main class="menu-content">
-            <h1>Elige tu Menú</h1>
-            <div class="search-box">
-                <input type="text" id="product-search" placeholder="Buscar producto...">
+            <div class="menu-header">
+                <h1>Elige tu Menú</h1>
+                <div class="search-container">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="product-search" placeholder="Busca tu antojo...">
+                </div>
             </div>
             <div id="products-container" class="products-grid"></div>
         </main>
@@ -37,14 +38,28 @@
         </section>
     </div>
 
+    <div id="payment-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <h2>💳 Pago Seguro</h2>
+            <p style="margin-bottom: 20px;">Total a pagar: <span id="payment-total" style="font-weight:bold; color:var(--primary);"></span></p>
+            <div class="payment-form">
+                <input type="text" id="card-number" placeholder="0000 0000 0000 0000" maxlength="19">
+                <div style="display: flex; gap: 10px; margin-top: 10px;">
+                    <input type="text" placeholder="MM/AA" maxlength="5" style="flex:2;">
+                    <input type="password" placeholder="CVV" maxlength="3" style="flex:1;">
+                </div>
+            </div>
+            <button id="confirm-payment-btn" class="btn-primary" style="margin-top:30px;">CONFIRMAR PAGO</button>
+            <button id="cancel-payment-btn" class="btn-secondary">CANCELAR</button>
+        </div>
+    </div>
+
     <div id="order-modal" class="modal-overlay hidden">
         <div class="modal-content">
-            <div style="font-size: 3rem;">✅</div>
-            <h2>¡PEDIDO RECIBIDO!</h2>
-            <div class="order-box">
-                <small>ORDEN NÚMERO</small>
-                <h1 id="order-number">#00</h1>
-            </div>
+            <div style="font-size: 5rem; margin-bottom: 10px;">✅</div>
+            <h2 style="font-size: 1.8rem;">¡LISTO!</h2>
+            <p style="color: #888;">Tu pedido está siendo preparado</p>
+            <h1 id="order-number" style="font-size: 4rem; margin: 25px 0; color: var(--dark);">#001</h1>
             <button id="close-modal-btn" class="btn-primary">NUEVA ORDEN</button>
         </div>
     </div>
