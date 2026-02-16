@@ -4,6 +4,14 @@
     { "id": 1, "name": "Mega Burger", "price": 8500, "category": "Hamburguesas", "image": "assets/img/burger.webp" },
     { "id": 2, "name": "Cyber Fries", "price": 2500, "category": "Papas", "image": "assets/img/papasfritas.webp" },
     { "id": 3, "name": "Neon Soda", "price": 1500, "category": "Bebidas", "image": "assets/img/soda.jpeg" },
-    { "id": 4, "name": "Ice Quantum", "price": 3000, "category": "Postres", "image": "assets/img/icecream.jpeg" }
+    { "id": 4, "name": "Ice Quantum", "price": 3000, "category": "Postres", "image": "assets/img/icecream.jpeg" },
+    { "id": 5, "name": "Double Matrix Burger", "price": 9500, "category": "Hamburguesas", "image": "assets/img/doblematrix.jpeg" },
+    { "id": 6, "name": "Chicken Glitch", "price": 7200, "category": "Hamburguesas", "image": "assets/img/chicken.jpeg" },
+    { "id": 7, "name": "Atomic Cheese", "price": 8900, "category": "Hamburguesas", "image": "assets/img/atomic.jpeg" },
+    { "id": 8, "name": "Vegan Vector", "price": 8200, "category": "Hamburguesas", "image": "assets/img/vegan.jpeg" },
+    { "id": 9, "name": "Bacon Byte Burger", "price": 9200, "category": "Hamburguesas", "image": "assets/img/bacon.jpeg" },
+    { "id": 10, "name": "Triple Core Burger", "price": 11500, "category": "Hamburguesas", "image": "assets/img/tripleburger.jpeg" },
+    { "id": 11, "name": "Waffle Chips", "price": 3200, "category": "Papas", "image": "assets/img/wafle.jpeg" },
+    { "id": 12, "name": "Curly Code Fries", "price": 3500, "category": "Papas", "image": "assets/img/curly.jpg" }
   ]
 }

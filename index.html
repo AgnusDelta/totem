@@ -3,42 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kiosk Pro | Touch to Order</title>
+    <title>KioskJS | McDonald's Style</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <div id="toast-container"></div>
+
     <div class="kiosk-wrapper">
-        <aside class="sidebar" id="categories-nav"></aside>
+        <aside class="sidebar">
+            <div class="logo-box">🍟 KioskJS</div>
+            <nav id="categories-nav"></nav>
+        </aside>
 
         <main class="menu-content">
-            <header>
-                <h1>Elige tu Menú</h1>
-            </header>
-            <div class="products-grid" id="products-container"></div>
+            <h1>Elige tu Menú</h1>
+            <div class="search-box">
+                <input type="text" id="product-search" placeholder="Buscar producto...">
+            </div>
+            <div id="products-container" class="products-grid"></div>
         </main>
 
         <section class="order-summary">
             <h2>Tu Pedido</h2>
             <div id="cart-items"></div>
             <div class="order-footer">
-                <div class="total">Total: <span id="total-amount">$0</span></div>
-                <button id="pay-btn" class="btn-pay">FINALIZAR PEDIDO</button>
+                <div class="total-row">
+                    <span>Total:</span>
+                    <span id="total-amount">$0</span>
+                </div>
+                <button id="clear-cart" class="btn-secondary">VACIAR CARRITO</button>
+                <button id="pay-btn" class="btn-primary">FINALIZAR PEDIDO</button>
             </div>
         </section>
     </div>
 
-    <script src="assets/js/script.js"></script>
     <div id="order-modal" class="modal-overlay hidden">
-    <div class="modal-content">
-        <div class="modal-icon">✅</div>
-        <h2>¡PEDIDO RECIBIDO!</h2>
-        <p>Retira tu ticket y espera tu turno.</p>
-        <div class="order-number-box">
-            <span>TU NÚMERO ES:</span>
-            <h1 id="order-number">#00</h1>
+        <div class="modal-content">
+            <div style="font-size: 3rem;">✅</div>
+            <h2>¡PEDIDO RECIBIDO!</h2>
+            <div class="order-box">
+                <small>ORDEN NÚMERO</small>
+                <h1 id="order-number">#00</h1>
+            </div>
+            <button id="close-modal-btn" class="btn-primary">NUEVA ORDEN</button>
         </div>
-        <button onclick="closeModal()" class="btn-close">NUEVO PEDIDO</button>
     </div>
-</div>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
